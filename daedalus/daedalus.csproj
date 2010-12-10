@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CE00CEF-39EB-4CD2-8323-12735C7C3A23}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>daedalus</RootNamespace>
+    <AssemblyName>daedalus</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Resources\nIcon_icon.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainControlClass.cs" />
+    <Compile Include="PluginListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginListForm.Designer.cs">
+      <DependentUpon>PluginListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PluginListForm.resx">
+      <DependentUpon>PluginListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nIcon_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nIcon_icon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\daedalusPluginBase\daedalusPluginBase.csproj">
+      <Project>{20A4E85F-8764-44F9-A9F9-FFCE5169F883}</Project>
+      <Name>daedalusPluginBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin_EventHttpServer\Plugin_EventHttpServer.csproj">
+      <Project>{7BBF4836-9831-4232-89DC-BD586DB20679}</Project>
+      <Name>Plugin_EventHttpServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin_EventXmlLogger\Plugin_EventXmlLogger.csproj">
+      <Project>{201117E6-990E-4704-91AB-77A1D46D0369}</Project>
+      <Name>Plugin_EventXmlLogger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin_InformAboutProcesses\Plugin_InformAboutProcesses.csproj">
+      <Project>{D62A1A14-38E3-4019-BB0F-0FE4ABAB03F8}</Project>
+      <Name>Plugin_InformAboutProcesses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin_NetworkStatusCheck\Plugin_NetworkStatusCheck.csproj">
+      <Project>{A4792C63-7694-4C71-A8B4-68304A4D4047}</Project>
+      <Name>Plugin_NetworkStatusCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin_SimpleTcpServer\Plugin_SimpleTcpServer.csproj">
+      <Project>{84532D0A-A851-4421-9E8C-AEEF6ADAFF85}</Project>
+      <Name>Plugin_SimpleTcpServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin_SyslogListener\Plugin_SyslogListener.csproj">
+      <Project>{0D470C45-E907-4EB7-A210-D78DEA4BD47C}</Project>
+      <Name>Plugin_SyslogListener</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugin_UdpClient\Plugin_UdpClient.csproj">
+      <Project>{4FDB0DF1-E8DB-44BF-8325-31E1EC8387F4}</Project>
+      <Name>Plugin_UdpClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\info.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="log\info.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="plugins\info.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\yin-yang.png" />
+    <None Include="Resources\wrench-screwdriver.png" />
+    <None Include="Resources\universal.png" />
+    <None Include="Resources\toolbox.png" />
+    <None Include="Resources\application-monitor.png" />
+    <None Include="Resources\yin-yang.ico" />
+    <None Include="Resources\system-monitor.ico" />
+    <None Include="Resources\eye-red.ico" />
+    <None Include="Resources\eye-half.ico" />
+    <None Include="Resources\eye-close.ico" />
+    <None Include="Resources\eye.ico" />
+    <None Include="Resources\burn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

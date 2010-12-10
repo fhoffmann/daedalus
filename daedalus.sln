@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{BE6E8306-7953-4A17-9989-0EC8D826A5DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugin DLL", "Plugin DLL", "{10DCFCB8-7FB1-4A73-AE70-CA1963EE9F4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "daedalus", "daedalus\daedalus.csproj", "{9CE00CEF-39EB-4CD2-8323-12735C7C3A23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "daedalusPluginBase", "daedalusPluginBase\daedalusPluginBase.csproj", "{20A4E85F-8764-44F9-A9F9-FFCE5169F883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin_ShowSomeInfos", "Plugin_ShowSomeInfos\Plugin_ShowSomeInfos.csproj", "{6B02CFE9-61DD-45D5-AD35-42A45BFF5564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin_EventHttpServer", "Plugin_EventHttpServer\Plugin_EventHttpServer.csproj", "{7BBF4836-9831-4232-89DC-BD586DB20679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin_SyslogListener", "Plugin_SyslogListener\Plugin_SyslogListener.csproj", "{0D470C45-E907-4EB7-A210-D78DEA4BD47C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin_EventXmlLogger", "Plugin_EventXmlLogger\Plugin_EventXmlLogger.csproj", "{201117E6-990E-4704-91AB-77A1D46D0369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin_NetworkStatusCheck", "Plugin_NetworkStatusCheck\Plugin_NetworkStatusCheck.csproj", "{A4792C63-7694-4C71-A8B4-68304A4D4047}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin_UdpClient", "Plugin_UdpClient\Plugin_UdpClient.csproj", "{4FDB0DF1-E8DB-44BF-8325-31E1EC8387F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin_InformAboutProcesses", "Plugin_InformAboutProcesses\Plugin_InformAboutProcesses.csproj", "{D62A1A14-38E3-4019-BB0F-0FE4ABAB03F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin_SimpleTcpServer", "Plugin_SimpleTcpServer\Plugin_SimpleTcpServer.csproj", "{84532D0A-A851-4421-9E8C-AEEF6ADAFF85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CE00CEF-39EB-4CD2-8323-12735C7C3A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE00CEF-39EB-4CD2-8323-12735C7C3A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE00CEF-39EB-4CD2-8323-12735C7C3A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE00CEF-39EB-4CD2-8323-12735C7C3A23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20A4E85F-8764-44F9-A9F9-FFCE5169F883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A4E85F-8764-44F9-A9F9-FFCE5169F883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A4E85F-8764-44F9-A9F9-FFCE5169F883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A4E85F-8764-44F9-A9F9-FFCE5169F883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B02CFE9-61DD-45D5-AD35-42A45BFF5564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B02CFE9-61DD-45D5-AD35-42A45BFF5564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B02CFE9-61DD-45D5-AD35-42A45BFF5564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B02CFE9-61DD-45D5-AD35-42A45BFF5564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBF4836-9831-4232-89DC-BD586DB20679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBF4836-9831-4232-89DC-BD586DB20679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBF4836-9831-4232-89DC-BD586DB20679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBF4836-9831-4232-89DC-BD586DB20679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D470C45-E907-4EB7-A210-D78DEA4BD47C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D470C45-E907-4EB7-A210-D78DEA4BD47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D470C45-E907-4EB7-A210-D78DEA4BD47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D470C45-E907-4EB7-A210-D78DEA4BD47C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201117E6-990E-4704-91AB-77A1D46D0369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201117E6-990E-4704-91AB-77A1D46D0369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201117E6-990E-4704-91AB-77A1D46D0369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201117E6-990E-4704-91AB-77A1D46D0369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4792C63-7694-4C71-A8B4-68304A4D4047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4792C63-7694-4C71-A8B4-68304A4D4047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4792C63-7694-4C71-A8B4-68304A4D4047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4792C63-7694-4C71-A8B4-68304A4D4047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDB0DF1-E8DB-44BF-8325-31E1EC8387F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDB0DF1-E8DB-44BF-8325-31E1EC8387F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDB0DF1-E8DB-44BF-8325-31E1EC8387F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDB0DF1-E8DB-44BF-8325-31E1EC8387F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62A1A14-38E3-4019-BB0F-0FE4ABAB03F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62A1A14-38E3-4019-BB0F-0FE4ABAB03F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62A1A14-38E3-4019-BB0F-0FE4ABAB03F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62A1A14-38E3-4019-BB0F-0FE4ABAB03F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84532D0A-A851-4421-9E8C-AEEF6ADAFF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84532D0A-A851-4421-9E8C-AEEF6ADAFF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84532D0A-A851-4421-9E8C-AEEF6ADAFF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84532D0A-A851-4421-9E8C-AEEF6ADAFF85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B02CFE9-61DD-45D5-AD35-42A45BFF5564} = {BE6E8306-7953-4A17-9989-0EC8D826A5DB}
+		{7BBF4836-9831-4232-89DC-BD586DB20679} = {BE6E8306-7953-4A17-9989-0EC8D826A5DB}
+		{0D470C45-E907-4EB7-A210-D78DEA4BD47C} = {BE6E8306-7953-4A17-9989-0EC8D826A5DB}
+		{201117E6-990E-4704-91AB-77A1D46D0369} = {BE6E8306-7953-4A17-9989-0EC8D826A5DB}
+		{A4792C63-7694-4C71-A8B4-68304A4D4047} = {BE6E8306-7953-4A17-9989-0EC8D826A5DB}
+		{4FDB0DF1-E8DB-44BF-8325-31E1EC8387F4} = {BE6E8306-7953-4A17-9989-0EC8D826A5DB}
+		{D62A1A14-38E3-4019-BB0F-0FE4ABAB03F8} = {BE6E8306-7953-4A17-9989-0EC8D826A5DB}
+		{84532D0A-A851-4421-9E8C-AEEF6ADAFF85} = {BE6E8306-7953-4A17-9989-0EC8D826A5DB}
+		{20A4E85F-8764-44F9-A9F9-FFCE5169F883} = {10DCFCB8-7FB1-4A73-AE70-CA1963EE9F4F}
+	EndGlobalSection
+EndGlobal

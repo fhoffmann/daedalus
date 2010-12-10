@@ -1,0 +1,1 @@
+﻿Hier kommen die ganzen Plugins rein, welche die Klasse/DLL daedalusPluginBase nutzen.
